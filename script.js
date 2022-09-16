@@ -7,7 +7,7 @@ function check(obj){
 
 question  = obj.name.toLowerCase();
 objClass = "."+obj.className.toLowerCase();
-userAns = $("#answer").val().toLowerCase();
+userAns = $("#answer").val().trim().toLowerCase();
 switch(question){
     case "1":
         if(userAns!="Institute of Electrical and Electronics Engineers".toLowerCase()){
@@ -19,12 +19,14 @@ switch(question){
         break; 
 
         case "2":
-            if(userAns!="accelerometer".toLowerCase()){
+            
+            if(userAns!="accelerometer"){
                 wrong(objClass);
                
             }else{
                 right(objClass);   
             }
+            break;
         case "3":
             if(userAns!="compiler".toLowerCase()){
                 wrong(objClass);
@@ -32,6 +34,7 @@ switch(question){
             }else{
                 right(objClass);   
             }
+            break;
 
 
 }
