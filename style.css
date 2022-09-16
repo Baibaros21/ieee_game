@@ -1,10 +1,13 @@
-.mainContainer{
+body{
     margin: auto;
     text-align: center;
     overflow: visible !important;
-    background: -webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background: -moz-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background: -ms-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background: -o-linear-gradient(45deg, #085078 10%, #85d8ce 90%);
-    background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background-repeat: none;
+    background-color: #21D4FD;
+    background-image: linear-gradient(90deg, #21D4FD 0%, #B721FF 100%);
+    font-size:x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(230, 219, 156);
+
+
 }
