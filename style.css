@@ -9,32 +9,46 @@ body{
     background-color: #0093E9;
     background-image: linear-gradient(90deg, #0042e9 0%, #8099d0 100%);
 }
-h3 strong{
+h4 strong{
     color:rgb(231, 212, 10);
 }
 .welcome,.riddles{
     height: 100vh;
     margin: 0 5%;
+    overflow:hidden;
 }
 .riddles{
-    display: flex;
+    
     flex-direction: column;
-    align-items: flex-start;
+   
 }
-.riddle{
+.riddle,.nextTip{
 align-self: center;
+
+}
+.nextTip{
+  
+    display: none;
+    border: 1px solid green;
+    border-radius :5px;
+    margin-top: 10px;
+    background-color:white;
+    color:green
+
 
 }
 .riddle input{
     border-radius:10px;
     border-width: 0;
-    height: 50%;
-    width: 100%;
+    width: 90%;
+    height: 30px;
     margin-top: 20px;
+ 
 }
 
 .riddle button{
     border-radius:10px;
+    
     border-width: 0;
     height: 30%;
     width: 80%;
@@ -44,4 +58,8 @@ align-self: center;
     color:rgb(214, 243, 209);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+.riddle button:hover{
+    background-image: linear-gradient(90deg, #a58faa 0%, #d080b7 100%);
 }

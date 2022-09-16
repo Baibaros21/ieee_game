@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <script type="text/javascript" href="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <title>Hoola Amigos</title>
 </head>
 <body>
     <section class="welcome">
-    <h2>Hola Amigos</h2>
-    <h3> Welcome to <strong>IEEE Riddles</strong></h3>
-    <h3>The rules are simple. Answer the following question, and get the the hint for the next riddle</h3>
-    <h3>Solve all the riddles to get IEEE honor badge and you shall be decalred as <span>tech guru</span> </h3>
-    <h3><strong>May the odds be in your favour</strong></h3>
+    <h4>Hola Amigos</h4>
+    <h4> Welcome to <strong>IEEE Riddles</strong></h4>
+    <h4>The rules are simple. Answer the following question, and get the the hint for the next riddle</h4>
+    <h4>Solve all the riddles to get IEEE honor badge and you shall be decalred as <span>tech guru</span> </h4>
+    <h4><strong>May the odds be in your favour</strong></h4>
     </section>
     <section class="riddles">
         
@@ -23,9 +24,14 @@
         <div class="riddle">
         <label class="question">What does IEEE stands for?</label>
         <input type="text" class="answer" id="answer"/>
-        <button type="button" class="check" id="check">submit that great answer</button>
+        <button type="button" onclick  = "check(this)" class="check" name="1">submit that great answer</button>
         </div>
 
+        <div class = 'nextTip' id="nextTip">
+                <h6>Alright Alright Alright. Looks like someone is ready for the challenge </h6>
+
+                <h6>The next tip is:</h6>
+        </div>
     </section>
 </body>
 </html>
