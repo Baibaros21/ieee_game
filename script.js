@@ -28,13 +28,29 @@ switch(question){
             }
             break;
         case "3":
-            if(userAns!="compiler".toLowerCase()){
+            if(userAns!="transistor".toLowerCase()){
                 wrong(objClass);
                
             }else{
                 right(objClass);   
             }
             break;
+         case "4":
+                if(userAns!="motherboard".toLowerCase()){
+                    wrong(objClass);
+                   
+                }else{
+                    right(objClass);   
+                }
+                break;
+             case "5":
+                    if(userAns!="compiler".toLowerCase()){
+                        wrong(objClass);
+                       
+                    }else{
+                        right(objClass);   
+                    }
+                    break;
 
 
 }
@@ -53,4 +69,19 @@ switch(question){
         $("#answer").css("border-color","green");
         $(objClass).text("Hurray!!"); 
         $("#nextTip").show();
+    } 
+
+
+    function verify(ans,nextPage){
+        userAns = $("#prevanswer").val().trim().toLowerCase();
+        ans = ans.trim().toLowerCase();
+        if(userAns == ans){
+            $("#prevanswer").css("border-width","2");
+            $("#prevanswer").css("border-color","green");
+                window.location = nextPage;
+        }else{
+            $("#prevanswer").css("border-width","2");
+        $("#prevanswer").css("border-color","red");
+       
+        }
     }
